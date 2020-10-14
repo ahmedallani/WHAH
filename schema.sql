@@ -6,7 +6,7 @@ CREATE TABLE student (
     firstname varchar (50),
     username varchar (50) NOT NULL,
     lastname varchar (50) ,
-    secretinfo varchar (150) NOT NULL,
+    secretinfo varchar (150) ,
     password varchar (250) NOT NULL,
     email varchar (50) NOT NULL ,
     country varchar (50) ,
