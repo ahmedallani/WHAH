@@ -44,7 +44,7 @@ app.get('/good', isLoggedIn, (req, res) => res.send(`Welcome mr ${req.user.displ
 // app.get('/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
 app.get('/google', (req, res) => {
     console.log(`Welcome mr`)
-    res.send(`Welcome mr`)
+    res.send({text:`Welcome mr`})
 });
 app.get('/google/callback', passport.authenticate('google', { failureRedirect: '/failed' }),
     function (req, res) {
